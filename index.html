@@ -12,16 +12,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lages e Região SC - Finanças Brasil</title>
     <style>
-        body { font-family: Arial, sans-serif; line-height: 1.6; color: #333; margin: 0; padding: 0; }
-        header { background: #003366; color: white; padding: 40px 20px; text-align: center; }
-        nav { background: #001f3d; padding: 15px; text-align: center; position: sticky; top: 0; }
-        nav a { color: white; margin: 0 15px; text-decoration: none; font-weight: bold; }
-        .container { max-width: 900px; margin: 20px auto; padding: 20px; }
-        .menu-icones { display: flex; justify-content: space-around; flex-wrap: wrap; margin: 30px 0; }
-        .card { background: #f4f4f4; border: 1px solid #ddd; border-radius: 8px; width: 30%; min-width: 200px; text-align: center; padding: 20px; margin-bottom: 15px; transition: 0.3s; cursor: pointer; text-decoration: none; color: #003366; }
-        .card:hover { background: #e0e0e0; transform: translateY(-5px); }
-        .card-icone { font-size: 40px; }
-        footer { background: #111; color: white; text-align: center; padding: 20px; margin-top: 40px; }
+        /* Estilo dos Cards de Navegação */
+.menu-icones {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 30px 0;
+}
+.card {
+    background: #f4f4f4;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: 30%;
+    min-width: 200px;
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 15px;
+    transition: 0.3s;
+    cursor: pointer;
+    text-decoration: none;
+    color: #003366;
+}
+.card:hover {
+    background: #e0e0e0;
+    transform: translateY(-5px);
+    border-color: #003366;
+}
+.card-icone { font-size: 40px; margin-bottom: 10px; }
+.card-titulo { font-weight: bold; font-size: 18px; }
+
     </style>
 </head>
 <body>
@@ -34,10 +53,28 @@
 
 <div class="container">
     <div class="menu-icones">
-        <a href="fleet-management.html" class="card"><div class="card-icone">🚚</div><div class="card-titulo">Caminhões</div></a>
-        <a href="insurance.html" class="card"><div class="card-icone">🛡️</div><div class="card-titulo">Seguros</div></a>
-        <a href="credito-pessoal.html" class="card"><div class="card-icone">💰</div><div class="card-titulo">Crédito</div></a>
-    </div>
+    <!-- Card Caminhões -->
+    <a href="fleet-management.html" class="card">
+        <div class="card-icone">🚚</div>
+        <div class="card-titulo">Caminhões</div>
+        <p>Gestão e Financiamento</p>
+    </a>
+
+    <!-- Card Seguros -->
+    <a href="insurance.html" class="card">
+        <div class="card-icone">🛡️</div>
+        <div class="card-titulo">Seguros</div>
+        <p>Proteção de Carga</p>
+    </a>
+
+    <!-- Card Crédito -->
+    <a href="credito-pessoal.html" class="card">
+        <div class="card-icone">💰</div>
+        <div class="card-titulo">Crédito</div>
+        <p>Score e Limites</p>
+    </a>
+</div>
+
 
     <h2>Destaques de Crédito e Financiamento 2025/2026</h2>
     <p><strong>[MANTENHA AQUI TODOS OS SEUS 30 TEXTOS QUE JÁ ESTÃO NO SITE]</strong></p>
