@@ -1,173 +1,352 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <!-- Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XL0Y8CHCM7"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-XL0Y8CHCM7');
-    </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lages e Região SC - Finanças Brasil</title>
-    
-    <style>
-        /* DESIGN PROFISSIONAL - FUNDO CINZA E TOPO AZUL */
-        body { 
-            font-family: 'Segoe UI', Arial, sans-serif; 
-            line-height: 1.6; 
-            color: #333; 
-            margin: 0; 
-            padding: 0; 
-            background-color: #f4f7f6; /* Fundo levemente cinza para destacar o conteúdo */
-        }
-        
-        header { 
-            background: #002b5c; /* Azul Marinho Profissional */
-            color: white; 
-            padding: 50px 20px; 
-            text-align: center; 
-            border-bottom: 5px solid #f9bc35; /* Detalhe em Dourado/Amarelo */
-        }
+  <meta name="description" content="Portal Lages e Região SC com informações sobre crédito, financiamento, caminhões, seguros e organização financeira para 2025 e 2026.">
+  <meta name="geo.region" content="BR-SC">
+  <meta name="geo.placename" content="Lages, Serra Catarinense">
 
-        nav { 
-            background: #001a35; 
-            padding: 15px; 
-            text-align: center; 
-            position: sticky; 
-            top: 0; 
-            z-index: 1000; 
-        }
-        nav a { 
-            color: white; 
-            margin: 0 15px; 
-            text-decoration: none; 
-            font-weight: bold; 
-            text-transform: uppercase; 
-        }
+  <title>Lages e Região SC - Finanças Brasil</title>
 
-        .container { 
-            max-width: 1000px; 
-            margin: 30px auto; 
-            padding: 25px; 
-            background: white; /* Caixa do conteúdo em branco */
-            border-radius: 8px; 
-            box-shadow: 0 4px 10px rgba(0,0,0,0.1); 
-        }
+  <!-- Google Analytics corrigido -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XL0Y8CHCM7"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
 
-        /* CARDS DOS SERVIÇOS */
-        .menu-icones { 
-            display: flex; 
-            justify-content: space-around; 
-            flex-wrap: wrap; 
-            margin: 30px 0; 
-            gap: 20px;
-        }
-        .card { 
-            background: #ffffff; 
-            border: 1px solid #ddd; 
-            border-radius: 12px; 
-            width: 30%; 
-            min-width: 250px; 
-            text-align: center; 
-            padding: 25px; 
-            text-decoration: none; 
-            color: #002b5c; 
-            transition: 0.3s;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
-        }
-        .card:hover { 
-            transform: translateY(-5px); 
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1); 
-        }
-        .card-icone { font-size: 50px; margin-bottom: 10px; display: block; }
-        .card-titulo { font-weight: bold; font-size: 20px; }
+    gtag('config', 'G-XL0Y8CHCM7');
+  </script>
 
-        /* LISTA DE TEXTOS - LIMPA */
-        .lista-textos { margin-top: 40px; }
-        .artigo { 
-            padding: 20px; 
-            border-bottom: 1px solid #eee; 
-            text-align: justify;
-        }
-        .artigo h3 { color: #002b5c; margin-top: 0; }
+  <style>
+    * {
+      box-sizing: border-box;
+    }
 
-        footer { 
-            background: #111; 
-            color: #ccc; 
-            padding: 30px; 
-            text-align: center; 
-            margin-top: 50px; 
-        }
-        footer a { color: white; text-decoration: none; margin: 0 10px; }
-    </style>
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #eef3f8;
+      color: #1f2933;
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(135deg, #003b73, #005fa3);
+      color: white;
+      padding: 45px 20px;
+      text-align: center;
+      border-bottom: 5px solid #d8e8f7;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 34px;
+      letter-spacing: 1px;
+    }
+
+    header p {
+      margin: 12px 0 0;
+      font-size: 17px;
+      color: #e7f2ff;
+    }
+
+    nav {
+      background: #ffffff;
+      border-bottom: 1px solid #d6e0ea;
+      text-align: center;
+      padding: 14px 10px;
+    }
+
+    nav a {
+      color: #004f8f;
+      text-decoration: none;
+      font-weight: bold;
+      margin: 0 12px;
+      font-size: 15px;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 30px auto;
+      padding: 0 18px;
+    }
+
+    .intro {
+      background: #ffffff;
+      border: 1px solid #d9e4ee;
+      border-radius: 12px;
+      padding: 25px;
+      margin-bottom: 25px;
+      box-shadow: 0 3px 10px rgba(0, 45, 90, 0.08);
+    }
+
+    .intro h2 {
+      margin-top: 0;
+      color: #003b73;
+      font-size: 26px;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+      margin: 25px 0;
+    }
+
+    .card {
+      background: #ffffff;
+      border: 1px solid #d9e4ee;
+      border-radius: 14px;
+      padding: 28px 20px;
+      text-align: center;
+      text-decoration: none;
+      color: #1f2933;
+      box-shadow: 0 3px 10px rgba(0, 45, 90, 0.07);
+      transition: 0.2s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 6px 16px rgba(0, 45, 90, 0.13);
+    }
+
+    .card .icone {
+      font-size: 42px;
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    .card h3 {
+      margin: 8px 0;
+      color: #003b73;
+      font-size: 22px;
+    }
+
+    .card p {
+      margin: 0;
+      color: #4b5b68;
+      font-size: 15px;
+    }
+
+    .conteudo {
+      background: #ffffff;
+      border: 1px solid #d9e4ee;
+      border-radius: 12px;
+      padding: 25px;
+      box-shadow: 0 3px 10px rgba(0, 45, 90, 0.08);
+    }
+
+    .conteudo h2 {
+      margin-top: 0;
+      color: #003b73;
+      border-left: 6px solid #005fa3;
+      padding-left: 12px;
+    }
+
+    .artigo {
+      padding: 18px 0;
+      border-bottom: 1px solid #e1e8ef;
+    }
+
+    .artigo:last-child {
+      border-bottom: none;
+    }
+
+    .artigo h3 {
+      margin: 0 0 8px;
+      color: #004f8f;
+      font-size: 21px;
+    }
+
+    .artigo p {
+      margin: 0;
+      text-align: justify;
+      color: #2f3d4a;
+    }
+
+    .links-rapidos {
+      margin-top: 18px;
+      padding: 18px;
+      background: #f3f8fc;
+      border: 1px solid #d8e8f7;
+      border-radius: 10px;
+    }
+
+    .links-rapidos h3 {
+      margin-top: 0;
+      color: #003b73;
+    }
+
+    .links-rapidos a {
+      display: inline-block;
+      margin: 6px 10px 6px 0;
+      padding: 9px 13px;
+      background: #005fa3;
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+      font-size: 14px;
+    }
+
+    .links-rapidos a:hover {
+      background: #003b73;
+    }
+
+    footer {
+      margin-top: 40px;
+      background: #003b73;
+      color: #e7f2ff;
+      text-align: center;
+      padding: 28px 15px;
+      font-size: 14px;
+    }
+
+    footer a {
+      color: #ffffff;
+      text-decoration: none;
+      margin: 0 8px;
+      font-weight: bold;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 800px) {
+      header h1 {
+        font-size: 27px;
+      }
+
+      .cards {
+        grid-template-columns: 1fr;
+      }
+
+      nav a {
+        display: inline-block;
+        margin: 6px 8px;
+      }
+    }
+  </style>
 </head>
+
 <body>
 
 <header>
-    <h1>LAGES E REGIÃO SC</h1>
-    <p>Portal Independente de Crédito, Finanças e Logística</p>
+  <h1>LAGES E REGIÃO SC - FINANÇAS BRASIL</h1>
+  <p>Informações sobre crédito, financiamento, caminhões, seguros e organização financeira</p>
 </header>
 
 <nav>
-    <a href="index.html">Início</a>
-    <a href="sobre.html">Sobre</a>
-    <a href="contato.html">Contato</a>
+  <a href="index.html">Início</a>
+  <a href="sobre.html">Sobre</a>
+  <a href="contato.html">Contato</a>
+  <a href="privacidade.html">Privacidade</a>
 </nav>
 
-<div class="container">
-    
-    <!-- ÍCONES DE NAVEGAÇÃO -->
-    <div class="menu-icones">
-        <a href="fleet-management.html" class="card">
-            <span class="card-icone">🚚</span>
-            <div class="card-titulo">Caminhões</div>
-            <p>Financiamento e Frotas</p>
-        </a>
-        <a href="insurance.html" class="card">
-            <span class="card-icone">🛡️</span>
-            <div class="card-titulo">Seguros</div>
-            <p>Proteção de Cargas</p>
-        </a>
-        <a href="credito-pessoal.html" class="card">
-            <span class="card-icone">💰</span>
-            <div class="card-titulo">Crédito</div>
-            <p>Score e Empréstimos</p>
-        </a>
+<main class="container">
+
+  <section class="intro">
+    <h2>Portal financeiro para Lages e Serra Catarinense</h2>
+    <p>
+      O Lages e Região SC reúne conteúdos informativos sobre crédito, financiamento de veículos,
+      caminhões, seguros, score, organização financeira e alternativas de planejamento para moradores
+      e trabalhadores da Serra Catarinense.
+    </p>
+  </section>
+
+  <section class="cards">
+    <a href="fleet-management.html" class="card">
+      <span class="icone">🚚</span>
+      <h3>Caminhões</h3>
+      <p>Gestão, financiamento e renovação de frota</p>
+    </a>
+
+    <a href="insurance.html" class="card">
+      <span class="icone">🛡️</span>
+      <h3>Seguros</h3>
+      <p>Proteção de carga, veículo e patrimônio</p>
+    </a>
+
+    <a href="credito-pessoal.html" class="card">
+      <span class="icone">💰</span>
+      <h3>Crédito</h3>
+      <p>Score, limites, cartões e empréstimos</p>
+    </a>
+  </section>
+
+  <section class="conteudo">
+    <h2>Destaques de Crédito e Financiamento 2025/2026</h2>
+
+    <article class="artigo">
+      <h3>Financiamento de caminhões em Lages</h3>
+      <p>
+        O transporte regional em Santa Catarina exige planejamento financeiro, manutenção preventiva
+        e análise cuidadosa das linhas de crédito disponíveis. Para quem trabalha com caminhões em Lages,
+        comparar prazos, taxas, entrada e custo total do financiamento é essencial antes de fechar contrato.
+      </p>
+    </article>
+
+    <article class="artigo">
+      <h3>Crédito pessoal e organização financeira</h3>
+      <p>
+        O crédito pessoal pode ser uma alternativa em momentos específicos, mas precisa ser usado com
+        planejamento. Avaliar parcelas, juros e impacto no orçamento mensal ajuda o consumidor a evitar
+        endividamento e manter uma vida financeira mais equilibrada.
+      </p>
+    </article>
+
+    <article class="artigo">
+      <h3>Score de crédito e aprovação</h3>
+      <p>
+        Manter contas em dia, evitar atrasos e acompanhar o histórico financeiro são atitudes que ajudam
+        na construção de um perfil mais confiável para bancos, cooperativas e financeiras. Um bom score
+        pode facilitar negociações e melhorar condições de crédito.
+      </p>
+    </article>
+
+    <article class="artigo">
+      <h3>Seguro para veículos e cargas</h3>
+      <p>
+        Para motoristas, transportadores e empresas da região, o seguro é uma camada importante de
+        proteção. Além do preço, é importante observar cobertura, assistência, franquia, riscos incluídos
+        e exclusões do contrato.
+      </p>
+    </article>
+
+    <article class="artigo">
+      <h3>Cooperativas de crédito em Santa Catarina</h3>
+      <p>
+        Cooperativas podem oferecer relacionamento mais próximo e soluções financeiras voltadas ao perfil
+        regional. Antes de contratar qualquer produto, o ideal é comparar propostas e entender todas as
+        condições envolvidas.
+      </p>
+    </article>
+
+    <div class="links-rapidos">
+      <h3>Páginas úteis</h3>
+      <a href="sobre.html">Conheça o projeto</a>
+      <a href="contato.html">Fale conosco</a>
+      <a href="privacidade.html">Política de privacidade</a>
     </div>
+  </section>
 
-    <div class="lista-textos">
-        <h2>Destaques Financeiros 2025/2026</h2>
-
-        <!-- Artigo 1 -->
-        <div class="artigo">
-            <h3>Financiamento de Pesados em Lages</h3>
-            <p>O mercado de transporte na Serra Catarinense exige veículos de alta performance. Em 2025, as linhas de crédito para renovação de frota em Lages focam em tecnologia Euro 6, garantindo mais economia no trecho da BR-116.</p>
-        </div>
-
-        <!-- Artigo 2 -->
-        <div class="artigo">
-            <h3>Como Aumentar seu Score em Santa Catarina</h3>
-            <p>Manter as contas em dia e o Cadastro Positivo ativo são os primeiros passos para liberar limites altos nos bancos de Lages. O Open Finance tem ajudado o catarinense a negociar taxas melhores.</p>
-        </div>
-
-        <!-- Artigo 3 -->
-        <div class="artigo">
-            <h3>Seguros de Carga na Serra do Rio do Rastro</h3>
-            <p>Proteger o patrimônio contra imprevistos climáticos e acidentes é vital. O seguro de carga regional oferece coberturas específicas para quem roda nas curvas perigosas da nossa serra.</p>
-        </div>
-        
-        <!-- Continue adicionando seus outros textos aqui seguindo o modelo acima -->
-
-    </div>
-</div>
+</main>
 
 <footer>
-    <p>&copy; 2024-2026 Lages e Região SC - Informação e Credibilidade</p>
-    <a href="sobre.html">Sobre</a> | <a href="contato.html">Contato</a> | <a href="privacidade.html">Privacidade</a>
+  <p>&copy; 2024-2026 Lages e Região SC - Finanças Brasil</p>
+  <p>
+    <a href="index.html">Início</a> |
+    <a href="sobre.html">Sobre</a> |
+    <a href="contato.html">Contato</a> |
+    <a href="privacidade.html">Privacidade</a>
+  </p>
 </footer>
 
 </body>
